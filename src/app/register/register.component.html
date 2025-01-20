@@ -1,0 +1,23 @@
+<div class="container-fluid bg-light vh-100">
+    <form [formGroup]="RegisterForm" class="container">
+        <label for="">First Name :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="fname">
+        <div class="alert alert-danger" role="alert" *ngIf="RegisterForm.controls.fname.touched&&RegisterForm.controls.fname.invalid">Plaese Start With Capital Letter</div>
+
+
+        <label for="">Last Name :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="lname">
+
+
+        <label for="">User Name :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="username">
+
+        <label for="">Email :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="email">
+
+        <label for="">Password :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="password">
+
+        <button class="btn btn-success mt-2" (click)="register(RegisterForm)" [disabled]="RegisterForm.touched&&RegisterForm.invalid">Register</button>
+    </form>
+</div>

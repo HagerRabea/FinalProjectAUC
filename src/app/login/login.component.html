@@ -1,0 +1,13 @@
+
+<div class="container-fluid bg-light vh-100">
+    <form [formGroup]="LoginForm" class="container" (ngSubmit)="login(LoginForm)">
+        <label for="">User Name :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="username">
+
+
+        <label for="">Password :</label>
+        <input type="text" name="" id="" class="form-control" formControlName="password">
+
+        <button class="btn btn-success mt-2" >Login</button>
+    </form>
+</div>
